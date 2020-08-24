@@ -19,6 +19,7 @@ import {
   Carousel,
   CarouselTitle,
   MapContainer,
+  ModalImage,
   ModalTitle,
   ModalContent,
 } from './styles';
@@ -110,14 +111,18 @@ const Home = () => {
       <Modal open={modalOpened} onClose={() => setModalOpened(!modalOpened)}>
         {restaurantSelected ? (
           <>
+            <ModalImage
+              src={restaurantSelected?.photos[0].getUrl()}
+              alt={restaurantSelected?.name}
+            />
             <ModalTitle>{restaurantSelected?.name}</ModalTitle>
             <ModalContent>Telefone: {restaurantSelected?.formatted_phone_number}</ModalContent>
 
             <ModalContent>{restaurantSelected?.formatted_address}</ModalContent>
             <ModalContent>
               {restaurantSelected?.opening_hours?.open_now
-                ? 'Aberto agora :)'
-                : 'Fechado neste horário :('}
+                ? 'Aberto agora 😀'
+                : 'Fechado neste horário 😞'}
             </ModalContent>
           </>
         ) : (

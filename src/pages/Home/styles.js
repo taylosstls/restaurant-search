@@ -86,6 +86,14 @@ export const CarouselTitle = styled.h1`
   margin: 32px 0 16px;
 `;
 
+export const ModalImage = styled.img`
+  width: 100%;
+  height: 200px;
+  margin-bottom: 32px;
+  border-radius: 8px;
+  object-fit: cover;
+`;
+
 export const ModalTitle = styled.p`
   font-family: ${props => props.theme.fonts.regular};
   color: ${props => props.theme.colors.text};
@@ -93,7 +101,7 @@ export const ModalTitle = styled.p`
   letter-spacing: 1px;
   font-size: 24px;
   line-height: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 `;
 
 export const ModalContent = styled.p`
