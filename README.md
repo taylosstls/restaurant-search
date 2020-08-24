@@ -1,5 +1,5 @@
 # 🍱 restaurant-search
-Uma aplicação feita em ReactJS integrada com Redux, States, utilizando o Google Maps API e Google Places API que lista todos os restaurantes do seu bairro, em um raio de até 10km.
+Uma aplicação feita em ReactJS integrada com Redux, States, utilizando o Google Maps API e Google Places API que lista todos os restaurantes do seu bairro, em um raio de até 10km. Desenvolvida durante o bootcamp da Digital Innovation One.
 
 <p align="middle">
 <img style="text-align: center;margin: 0 auto;display: block;" src="https://raw.githubusercontent.com/taylosstls/restaurant-search/master/public/finder.gif" width="600" alt="Restaurant Finder">
